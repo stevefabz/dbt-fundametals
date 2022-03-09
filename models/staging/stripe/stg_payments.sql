@@ -4,7 +4,7 @@ select
 orderid as order_id,
 paymentmethod,
 status,
-amount,
+amount/100 as amount,
 created as datecreated
 from RAW.STRIPE.PAYMENT
 )
