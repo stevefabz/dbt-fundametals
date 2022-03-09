@@ -6,7 +6,7 @@ paymentmethod,
 status,
 amount/100 as amount,
 created as datecreated
-from {{source('stripe','payments')}}
+from {{source('stripe', 'payment')}} 
 )
 select *
 from stg_payments
